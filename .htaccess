@@ -1,0 +1,6 @@
+<FilesMatch "\.html$">
+AddHandler application/x-httpd-php .html .htm
+AddType application/x-httpd-php .html .htm
+</FilesMatch>
+
+Header set Access-Control-Allow-Origin "*"
