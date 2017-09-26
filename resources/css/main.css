@@ -91,7 +91,7 @@ th, td > .schedule-table{
 }
 
 #maps_embed>iframe{
-    pointer-events: none;
+	pointer-events: none;
 }
 
 /***********   NAVBAR   ***********/
@@ -172,6 +172,10 @@ th, td > .schedule-table{
 /***********   INSTRUCTOR CARDS   ***********/
 
 .card_row{
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
 	display:flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -188,9 +192,7 @@ th, td > .schedule-table{
 
 img.meet{
 	width: 150px;
-	max-width: 150px;
 	height: 150px;
-	min-height: 100%;
 	overflow: hidden;
 }
 
